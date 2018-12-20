@@ -13,10 +13,11 @@ namespace AppProject
         {
             InitializeComponent();
 
+            //padding for iphone
             if (Device.OS == TargetPlatform.iOS)
                 Padding = new Thickness(0, 20, 0, 0);
         }
-
+        //setting up click functions
         async void Torch_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Torch());

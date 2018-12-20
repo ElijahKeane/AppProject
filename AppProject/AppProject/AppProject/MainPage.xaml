@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AppProject"
              x:Class="AppProject.MainPage">
+
+    <!-- Setting up buttons and their designs and layout of page -->
     <Grid BackgroundColor="DeepSkyBlue">
         <Button x:Name="Torch"  Grid.Row="0" Grid.Column="0" CornerRadius="25"  Text="Torch" TextColor="White" BackgroundColor="Black"
             Clicked="Torch_Clicked"></Button>

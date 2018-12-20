@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppProject.BMICalculator">
 
-
+    <!-- Setting up layout of page -->
     <Grid>
         <TextBox x:Name="InputWeight" HorizontalAlignment="Left" Margin="115,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="235" InputScope="Digits"/>
         <TextBox x:Name="InputHeight" HorizontalAlignment="Left" Margin="115,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="235" InputScope="Digits"/>

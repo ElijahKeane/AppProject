@@ -21,6 +21,7 @@ namespace AppProject
         {
             InitializeComponent();
 
+            //padding for iphone
             if (Device.OS == TargetPlatform.iOS)
                 Padding = new Thickness(0, 20, 0, 0);
 
