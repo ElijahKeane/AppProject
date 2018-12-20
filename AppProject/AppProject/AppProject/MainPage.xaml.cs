@@ -17,8 +17,19 @@ namespace AppProject
                 Padding = new Thickness(0, 20, 0, 0);
         }
 
-        private void Torch_Clicked(object sender, EventArgs e) => DisplayAlert("Title", "Torch Page", "Ok");
-        private void Calculator_Clicked(object sender, EventArgs e) => DisplayAlert("Title", "Calcuator Page", "Ok");
-        private void BMICalculator_Clicked(object sender, EventArgs e) => DisplayAlert("Title", "BMI Calculator Page", "Ok");
+        async void Torch_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Torch());
+        }
+
+        async void Calculator_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Calculator());
+        }
+
+        async void BMICalculator_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BMICalculator());
+        }
     }
 }
