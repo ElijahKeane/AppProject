@@ -2,11 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppProject.Torch">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="This is the Torch Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <Grid>
+        <Button x:Name="ButtonOn" Clicked="ButtonOn_Clicked" Grid.Row="0" Grid.Column="0" Text="Torch on" TextColor="White" BackgroundColor="Black" Clicked="Handle_Clicked"></Button>
+        <Button x:Name="ButtonOff" Clicked="ButtonOff_Clicked" Grid.Row="0" Grid.Column="1" Text="Torch off" TextColor="White" BackgroundColor="Black" Clicked="Handle_Clicked_1"></Button>
+    </Grid>
+   
 </ContentPage>

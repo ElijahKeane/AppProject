@@ -21,5 +21,6 @@ namespace AppProject.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
+
     }
 }
