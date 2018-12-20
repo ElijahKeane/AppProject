@@ -19,5 +19,16 @@ namespace AppProject
             if (Device.OS == TargetPlatform.iOS)
                 Padding = new Thickness(0, 20, 0, 0);
         }
-	}
+
+        private void ButtonCalculate_Click(object sender, RoutedEventArgs e)
+        {
+            var weight = float.Parse(this.InputWeight.Text);
+            var height = float.Parse(this.InputHeight.Text);
+
+            var result = Calculator.CalculateBodyMassIndex(weight, height);
+
+            this.OutputResult.Text = result.ToString();
+        }
+
+    }
 }
