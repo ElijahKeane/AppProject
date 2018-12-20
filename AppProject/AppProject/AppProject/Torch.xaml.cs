@@ -15,6 +15,9 @@ namespace AppProject
 		public Torch ()
 		{
 			InitializeComponent ();
-		}
+
+            if (Device.OS == TargetPlatform.iOS)
+                Padding = new Thickness(0, 20, 0, 0);
+        }
 	}
 }
